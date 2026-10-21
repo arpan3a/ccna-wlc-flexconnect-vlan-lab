@@ -1,0 +1,44 @@
+! Sanitized final relevant configuration
+hostname SW1
+spanning-tree mode pvst
+spanning-tree extend system-id
+
+vlan 10
+ name IT
+vlan 20
+ name HR
+vlan 30
+ name Finance
+vlan 50
+ name Management
+
+! Actual connected trunk ports in the lab
+interface FastEthernet0/1
+ switchport trunk native vlan 50
+ switchport trunk allowed vlan 10,20,30,50
+ switchport mode trunk
+interface FastEthernet0/2
+ switchport trunk native vlan 50
+ switchport trunk allowed vlan 10,20,30,50
+ switchport mode trunk
+interface FastEthernet0/3
+ description Management-PC
+ switchport access vlan 50
+ switchport mode access
+ spanning-tree portfast
+interface FastEthernet0/4
+ switchport trunk native vlan 50
+ switchport trunk allowed vlan 10,20,30,50
+ switchport mode trunk
+interface FastEthernet0/5
+ switchport trunk native vlan 50
+ switchport trunk allowed vlan 10,20,30,50
+ switchport mode trunk
+interface FastEthernet0/6
+ switchport trunk native vlan 50
+ switchport trunk allowed vlan 10,20,30,50
+ switchport mode trunk
+interface FastEthernet0/7
+ switchport trunk native vlan 50
+ switchport trunk allowed vlan 10,20,30,50
+ switchport mode trunk
