@@ -147,10 +147,3 @@ See [verification/verification-checklist.md](verification/verification-checklist
 
 This lab connected wireless and wired networking concepts. A functioning SSID alone is not sufficient: the WLC interface, WLAN mapping, AP switching mode, switch trunk, router subinterface, DHCP relay, and return path must all agree. Restricting trunk VLANs and using a dedicated management access port also produced a cleaner and more intentional Layer 2 design.
 
-## Future improvements
-
-Possible future additions after studying the relevant topics include 802.1X/RADIUS authentication, rogue AP detection, DHCP snooping, ACL-based WLAN policy, redundant WLC design, and expanded wireless monitoring.
-
-## Disclaimer
-
-This is an educational CCNA lab built in Cisco Packet Tracer. Passwords and WPA2 keys are intentionally omitted. The configuration is not intended as a production template.
